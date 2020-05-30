@@ -1,0 +1,15 @@
+#!/bin/bash
+# This script launches a GNOME Flashback session with i3.
+
+# Register with gnome-session. If not, gnome-session will think the session is dead and kill it.
+if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
+    dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.RegisterClient "string:i3-gnome" "string:$DESKTOP_AUTOSTART_ID"
+fi
+
+echo "Launching i3"
+i3
+
+# Close session when i3 exits.
+if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
+    dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
+fi

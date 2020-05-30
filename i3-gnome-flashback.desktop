@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=i3-gnome-flashback
+Comment=This logs you into a GNOME Flashback session with i3 as window manager
+Exec=i3-gnome-flashback
+X-GNOME-WMName=i3-gnome-flashback
+X-GNOME-Autostart-Phase=WindowManager
+X-GNOME-Provides=windowmanager
+X-GNOME-Autostart-Notify=false
