@@ -1,0 +1,21 @@
+Source: i3-gnome-flashback
+Section: unknown
+Priority: optional
+Maintainer: Norvald H. Ryeng <norvald@ryeng.name>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.0
+Homepage: https://github.com/ryeng/i3-gnome-flashback
+Vcs-Browser: https://github.com/ryeng/i3-gnome-flashback
+Vcs-Git: https://github.com/ryeng/i3-gnome-flashback.git
+
+Package: i3-gnome-flashback
+Architecture: all
+Depends: ${misc:Depends}
+    coreutils,
+    dbus,
+    gnome-flashback,
+    gnome-session-bin,
+    i3-wm
+Description: GNOME Flashback session for the i3 window manager (i3-wm)
+ This package provides the scripts to show GNOME Flashback with i3 as a
+ session type on the login screen.

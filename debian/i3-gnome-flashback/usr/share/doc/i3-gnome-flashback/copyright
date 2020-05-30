@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: i3-gnome-flashback
+Source: https://github.com/ryeng/i3-gnome-flashback
+
+Files: *
+Copyright: 2020 Norvald H. Ryeng <norvald@ryeng.name>
+License: CC0

@@ -1,0 +1,5 @@
+version=4
+
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%i3-gnome-flashback-$1.tar.gz%" \
+   https://github.com/ryeng/i3-gnome-flashback/tags \
+   (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
